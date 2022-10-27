@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import { adCheck } from '@plai-io/public-misc';
 
 function App() {
+  const a = adCheck("Hello");
+  console.log(`adCheck = ${a ? "YES" : "NO"}`)
   return (
     <div className="App">
       <header className="App-header">
